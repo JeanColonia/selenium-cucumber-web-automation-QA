@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="16.731">
-    <testcase classname="test google search funcionality" name="Validate google search's working" time="16.604">
-        <system-out><![CDATA[Given browser is open.......................................................passed
-And user is on google search page...........................................passed
-When user enters a text value in search box.................................passed
-And click or hits enter key.................................................passed
-Then user is navigated to results page......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="test login funcionality" name="Check login with valid credentials" time="0">
-        <system-out><![CDATA[Given user is on login page.................................................passed
-When user enters username...................................................passed
-And user enters password....................................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page.....................................passed
-]]></system-out>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.596">
+    <testcase classname="Probar la funcionalidad del buscador de Google" name=": Validar el trabajo del buscador de Google" time="11.436">
+        <system-out>
+            <![CDATA[Dado que el usuario se encuentra en la pagina del buscador de duckduckgo....passed
+Cuando el usuario ingresa un texto en la caja del buscador..................passed
+Y hace click en el boton buscar.............................................passed
+Entonces el usuario es conducido hasta la pagina de los resultados de su busqueda.passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

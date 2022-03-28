@@ -1,1 +1,115 @@
-[{"line":1,"elements":[{"start_timestamp":"2022-03-17T02:22:42.231Z","line":2,"name":"Validate google search's working","description":"","id":"test-google-search-funcionality;validate-google-search-s-working","type":"scenario","keyword":"Scenario","steps":[{"result":{"duration":1493662600,"status":"passed"},"line":3,"name":"browser is open","match":{"location":"StepDefinitions.GoogleStepDef.browser_is_open()"},"keyword":"Given "},{"result":{"duration":4319146700,"status":"passed"},"line":4,"name":"user is on google search page","match":{"location":"StepDefinitions.GoogleStepDef.user_is_on_google_search_page()"},"keyword":"And "},{"result":{"duration":2069533600,"status":"passed"},"line":5,"name":"user enters a text value in search box","match":{"location":"StepDefinitions.GoogleStepDef.user_enters_a_text_value_in_search_box()"},"keyword":"When "},{"result":{"duration":2342579700,"status":"passed"},"line":6,"name":"click or hits enter key","match":{"location":"StepDefinitions.GoogleStepDef.click_or_hits_enter_key()"},"keyword":"And "},{"result":{"duration":6347037800,"status":"passed"},"line":7,"name":"user is navigated to results page","match":{"location":"StepDefinitions.GoogleStepDef.user_is_navigated_to_results_page()"},"keyword":"Then "}]}],"name":"test google search funcionality","description":"","id":"test-google-search-funcionality","keyword":"Feature","uri":"file:src/test/resources/features/GoogleSearch.feature","tags":[]},{"line":1,"elements":[{"start_timestamp":"2022-03-17T02:22:58.846Z","line":2,"name":"Check login with valid credentials","description":"","id":"test-login-funcionality;check-login-with-valid-credentials","type":"scenario","keyword":"Scenario","steps":[{"result":{"status":"passed"},"line":3,"name":"user is on login page","match":{"location":"StepDefinitions.userStepDef.user_is_on_login_page()"},"keyword":"Given "},{"result":{"status":"passed"},"line":4,"name":"user enters username","match":{"location":"StepDefinitions.userStepDef.user_enters_username()"},"keyword":"When "},{"result":{"status":"passed"},"line":5,"name":"user enters password","match":{"location":"StepDefinitions.userStepDef.user_enters_password()"},"keyword":"And "},{"result":{"status":"passed"},"line":6,"name":"clicks on login button","match":{"location":"StepDefinitions.userStepDef.clicks_on_login_button()"},"keyword":"And "},{"result":{"status":"passed"},"line":7,"name":"user is navigated to the home page","match":{"location":"StepDefinitions.userStepDef.user_is_navigated_to_the_home_page()"},"keyword":"Then "}]}],"name":"test login funcionality","description":"","id":"test-login-funcionality","keyword":"Feature","uri":"file:src/test/resources/features/login.feature","tags":[]}]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-25T15:39:11.220Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1997700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "bdd.web.glue.LoginGlue.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": ": Validar el trabajo del buscador de Google",
+        "description": "",
+        "id": "probar-la-funcionalidad-del-buscador-de-google;:-validar-el-trabajo-del-buscador-de-google",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "bdd.web.glue.LoginGlue.tearsDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1586629000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.tearsDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Escenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4770369700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que el usuario se encuentra en la pagina del buscador de duckduckgo",
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.el_usuario_se_encuentra_en_la_pagina_del_buscador_de_google()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1091465400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "el usuario ingresa un texto en la caja del buscador",
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.el_usuario_ingresa_un_texto_en_la_caja_del_buscador()"
+            },
+            "keyword": "Cuando "
+          },
+          {
+            "result": {
+              "duration": 2860033200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hace click en el boton buscar",
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.click_or_hits_enter_key_presiona_la_tecla_enter()"
+            },
+            "keyword": "Y "
+          },
+          {
+            "result": {
+              "duration": 1064095500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "el usuario es conducido hasta la pagina de los resultados de su busqueda",
+            "match": {
+              "location": "bdd.web.glue.duckDuckGoSearchGlue.el_usuario_es_conducido_hasta_la_pagina_de_los_resultados_de_su_busqueda()"
+            },
+            "keyword": "Entonces "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@duckDuckGoSearch"
+          }
+        ]
+      }
+    ],
+    "name": "Probar la funcionalidad del buscador de Google",
+    "description": "",
+    "id": "probar-la-funcionalidad-del-buscador-de-google",
+    "keyword": "Característica",
+    "uri": "file:src/test/resources/features/duckDuckGoSearch.feature",
+    "tags": []
+  }
+]

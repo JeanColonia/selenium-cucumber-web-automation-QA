@@ -1,7 +1,15 @@
-Feature: test login funcionality
-Scenario:  Check login with valid credentials
-  Given user is on login page
-  When user enters username
-  And user enters password
-  And clicks on login button
-  Then user is navigated to the home page
+#language: es
+@LOGIN
+Característica: : Login en saucedemo
+  Yo como usuario de SauceDemo
+  Quiero ingresar a la plataforma
+  Para buscar productos
+
+  @HAPPY_PATH
+    Escenario: Hacer login con credenciales invalidas
+    Dado que estoy en la plataforma de MyStore
+      Cuando hago click en el boton sign in
+      Y ingreso las credenciales del usuario
+        | email                 | pass           |
+        | jeancolonia@gmail.com | jeancolonia123 |
+    Entonces se debería validar que se muestra el mensaje de error "There is 1 error"
